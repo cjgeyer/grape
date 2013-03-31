@@ -1,0 +1,2 @@
+rm -f grape/src/*.{o,so,rds}
+R CMD check grape

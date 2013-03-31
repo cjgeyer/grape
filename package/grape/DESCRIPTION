@@ -1,0 +1,9 @@
+Package: grape
+Version: 0.1
+Date: 26 Jan 2005
+Title: MCMC Markov Graph Models
+Author: Charles J. Geyer <charlie@stat.umn.edu>.
+Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
+Depends: R (>= 1.7.0)
+Description: see title
+License: X11 (http://www.x.org/Downloads_terms.html)

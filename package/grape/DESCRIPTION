@@ -1,9 +1,10 @@
 Package: grape
 Version: 0.1
-Date: 26 Jan 2005
-Title: MCMC Markov Graph Models
+Date: Nov 10 2022
+Title: Simulate Markov Graph Models via MCMC
 Author: Charles J. Geyer <charlie@stat.umn.edu>.
 Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
-Depends: R (>= 1.7.0)
-Description: see title
+Depends: R (>= 3.0.2)
+Description: Simulate Markov graph models whose canonical statistics
+    are the number of nodes of each degree via Markov chain Monte Carlo.
 License: MIT + file LICENSE

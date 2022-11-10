@@ -1,2 +1,3 @@
-rm -f grape/src/*.{o,so,rds}
-R CMD check grape
+rm -rf grape_*.tar.gz
+R CMD build grape
+R CMD check grape_*.tar.gz

@@ -5,8 +5,7 @@ phase transitions or degeneracy or whatever you want to call it.
 Simulation is Markov chain Monte Carlo.
 
 To install using R package remotes
-([https://cran.r-project.org/package=remotes]
-(https://cran.r-project.org/package=remotes))
+(https://cran.r-project.org/package=remotes)
 
     library(remotes)
     install_github("cjgeyer/grape", subdir = "package/grape")

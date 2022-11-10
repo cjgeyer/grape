@@ -20,6 +20,8 @@
 */
 
 #include <R.h>
+#include <R_ext/Utils.h>
+#include "grape.h"
 
 void grape(int *nnode_in, int *nspac_in, int *nbatch_in, int *blen_in,
     int *state, double *theta, double *batch)
@@ -93,6 +95,8 @@ void grape(int *nnode_in, int *nspac_in, int *nbatch_in, int *blen_in,
     GetRNGstate();
 
     for (int ibatch = 0, kbatch = 0; ibatch < nbatch; ++ibatch) {
+
+        R_CheckUserInterrupt();
 
         for (int i = 0; i < nnode; ++i)
             tbat[i] = 0;

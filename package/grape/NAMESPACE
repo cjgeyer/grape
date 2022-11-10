@@ -1,2 +1,2 @@
-useDynLib(grape)
+useDynLib(grape, .registration = TRUE, .fixes = "C_")
 export(grape)

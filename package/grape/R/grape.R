@@ -55,9 +55,8 @@ grape <- function(nnode, nbatch, state, theta, nspac = 1, blen = 1)
     dbatch <- matrix(as.double(0), nnode, nbatch)
 
     out.time <- system.time(
-    out <- .C("grape", nnode = inode, nspac = ispac, nbatch = ibatch,
-        blen = iblen, state = istate, theta = dtheta, batch = dbatch,
-        PACKAGE = "grape")
+    out <- .C(C_grape, nnode = inode, nspac = ispac, nbatch = ibatch,
+        blen = iblen, state = istate, theta = dtheta, batch = dbatch)
     )
 
     out$state[upper.tri(out$state, diag = TRUE)] <- 0
